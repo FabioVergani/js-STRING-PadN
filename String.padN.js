@@ -1,4 +1,5 @@
 
+String.padN=function(s,l,t){while(s.length<l){s=t+s};return s}
 
 
 
