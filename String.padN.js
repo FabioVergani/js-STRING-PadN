@@ -1,5 +1,13 @@
 
-String.padN=function(s,l,t){while(s.length<l){s=t+s};return s}
+String.repeat=function(s,n){var t='';if(n>1){while(n>0){if(n%2===1){t+=s};s+=s;n>>=1}}else{t=n<=0?'':s};return t};
+String.padN=function(s,i,t){return t?i?String.repeat(t,i-s.length)+s:s:s};
+
+
+
+
+
+
+//String.padN=function(s,l,t){while(s.length<l){s=t+s};return s}
 
 
 
